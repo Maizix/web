@@ -1,0 +1,1055 @@
+2018-01-07 22:13:51,236 [MainThread:11064] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-01-07 22:13:51,241 [MainThread:11064] [django.db.backends:91] [utils:execute] [DEBUG]- (0.003) SELECT VERSION(); args=None
+2018-01-07 22:13:51,311 [MainThread:11064] [django.db.backends:91] [utils:execute] [DEBUG]- (0.005) SHOW FULL TABLES; args=None
+2018-01-07 22:13:51,316 [MainThread:11064] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-01-07 22:13:55,912 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-01-07 22:13:55,912 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT @@sql_mode; args=None
+2018-01-07 22:13:55,916 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2018-01-07 22:13:55,978 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SHOW FULL TABLES; args=None
+2018-01-07 22:13:55,981 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-01-07 22:13:55,983 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SHOW FULL TABLES; args=None
+2018-01-07 22:13:55,985 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-01-07 22:13:56,085 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SHOW FULL TABLES; args=None
+2018-01-07 22:13:56,087 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-01-07 22:13:56,088 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'admin' AND `django_content_type`.`model` = 'logentry'); args=('admin', 'logentry')
+2018-01-07 22:13:56,091 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (1) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,)
+2018-01-07 22:13:56,093 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',)
+2018-01-07 22:13:56,094 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'permission'); args=('auth', 'permission')
+2018-01-07 22:13:56,096 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'group'); args=('auth', 'group')
+2018-01-07 22:13:56,097 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (2, 3) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(2, 3)
+2018-01-07 22:13:56,099 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+2018-01-07 22:13:56,100 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` = 'contenttype'); args=('contenttypes', 'contenttype')
+2018-01-07 22:13:56,103 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (4) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(4,)
+2018-01-07 22:13:56,103 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+2018-01-07 22:13:56,105 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` = 'session'); args=('sessions', 'session')
+2018-01-07 22:13:56,108 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(5,)
+2018-01-07 22:13:56,108 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+2018-01-07 22:13:56,109 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'userprofile'); args=('common', 'userprofile')
+2018-01-07 22:13:56,111 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'ad'); args=('common', 'ad')
+2018-01-07 22:13:56,112 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'careercourse'); args=('common', 'careercourse')
+2018-01-07 22:13:56,114 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'class'); args=('common', 'class')
+2018-01-07 22:13:56,115 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'classstudents'); args=('common', 'classstudents')
+2018-01-07 22:13:56,118 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'course'); args=('common', 'course')
+2018-01-07 22:13:56,120 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'courseresource'); args=('common', 'courseresource')
+2018-01-07 22:13:56,121 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'discuss'); args=('common', 'discuss')
+2018-01-07 22:13:56,123 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'emailverifyrecord'); args=('common', 'emailverifyrecord')
+2018-01-07 22:13:56,126 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'keywords'); args=('common', 'keywords')
+2018-01-07 22:13:56,127 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'lesson'); args=('common', 'lesson')
+2018-01-07 22:13:56,129 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'lessonresource'); args=('common', 'lessonresource')
+2018-01-07 22:13:56,131 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'links'); args=('common', 'links')
+2018-01-07 22:13:56,132 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'mycourse'); args=('common', 'mycourse')
+2018-01-07 22:13:56,134 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'myfavorite'); args=('common', 'myfavorite')
+2018-01-07 22:13:56,135 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'mymessage'); args=('common', 'mymessage')
+2018-01-07 22:13:56,137 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'recommendedreading'); args=('common', 'recommendedreading')
+2018-01-07 22:13:56,140 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'recommendkeywords'); args=('common', 'recommendkeywords')
+2018-01-07 22:13:56,141 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'stage'); args=('common', 'stage')
+2018-01-07 22:13:56,143 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'userlearninglesson'); args=('common', 'userlearninglesson')
+2018-01-07 22:13:56,143 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'userpurchase'); args=('common', 'userpurchase')
+2018-01-07 22:13:56,144 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'common' AND `django_content_type`.`model` = 'userunlockstage'); args=('common', 'userunlockstage')
+2018-01-07 22:13:56,147 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27)
+2018-01-07 22:13:56,150 [MainThread:9628] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'common'; args=('common',)
+2018-01-07 22:14:04,795 [Dummy-1:3664] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-01-07 22:14:04,796 [Dummy-1:3664] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SELECT VERSION(); args=None
+2018-01-07 22:14:04,869 [Dummy-1:3664] [django.db.backends:91] [utils:execute] [DEBUG]- (0.002) SHOW FULL TABLES; args=None
+2018-01-07 22:14:04,872 [Dummy-1:3664] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-01-07 22:14:07,857 [Thread-2:12796] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-01-07 22:14:07,857 [Thread-2:12796] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) FROM (SELECT `course`.`id` AS Col1 FROM `course` ORDER BY `course`.`date_publish` DESC LIMIT 40) subquery; args=()
+2018-01-07 22:14:07,861 [Thread-2:12796] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) FROM (SELECT `course`.`id` AS Col1 FROM `course` ORDER BY `course`.`click_count` DESC LIMIT 40) subquery; args=()
+2018-01-07 22:14:07,861 [Thread-2:12796] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) FROM (SELECT `course`.`id` AS Col1 FROM `course` ORDER BY `course`.`student_count` DESC LIMIT 40) subquery; args=()
+2018-01-07 22:14:07,873 [Thread-2:12796] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `recommend_keywords`.`id`, `recommend_keywords`.`name` FROM `recommend_keywords` LIMIT 8; args=()
+2018-01-07 22:14:07,877 [Thread-2:12796] [django.db.backends:91] [utils:execute] [DEBUG]- (0.004) SELECT `ad`.`id`, `ad`.`title`, `ad`.`description`, `ad`.`image_url`, `ad`.`callback_url`, `ad`.`index` FROM `ad` ORDER BY `ad`.`index` ASC, `ad`.`id` ASC LIMIT 3; args=()
+2018-01-07 22:14:07,877 [Thread-2:12796] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `course`.`id`, `course`.`name`, `course`.`image`, `course`.`description`, `course`.`is_active`, `course`.`date_publish`, `course`.`need_days`, `course`.`need_days_base`, `course`.`student_count`, `course`.`favorite_count`, `course`.`click_count`, `course`.`is_novice`, `course`.`is_click`, `course`.`index`, `course`.`teacher_id`, `course`.`stages_id`, `course`.`is_homeshow`, `course`.`is_required` FROM `course` ORDER BY `course`.`date_publish` DESC LIMIT 3; args=()
+2018-01-07 22:14:07,885 [Thread-2:12796] [django.server:124] [basehttp:log_message] [INFO]- "GET /?page=2 HTTP/1.1" 200 33983
+2018-01-07 22:14:07,939 [Thread-3:13144] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/yzm.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2018-01-07 22:14:07,947 [Thread-3:13144] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/yzm.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'course.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\course\\\\urls.py'> (None:course) ^course/>"
+2018-01-07 22:14:07,955 [Thread-4:1908] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/15.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2018-01-07 22:14:07,955 [Thread-3:13144] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/yzm.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'users.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\users\\\\urls.py'> (None:users) ^users/>"
+2018-01-07 22:14:07,959 [Thread-4:1908] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/15.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'course.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\course\\\\urls.py'> (None:course) ^course/>"
+2018-01-07 22:14:07,963 [Thread-3:13144] [django.server:124] [basehttp:log_message] [WARNING]- "GET /test/yzm.jpg HTTP/1.1" 404 2860
+2018-01-07 22:14:07,963 [Thread-4:1908] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/15.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'users.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\users\\\\urls.py'> (None:users) ^users/>"
+2018-01-07 22:14:07,967 [Thread-4:1908] [django.server:124] [basehttp:log_message] [WARNING]- "GET /test/15.jpg HTTP/1.1" 404 2857
+2018-01-07 22:16:26,621 [Dummy-1:8468] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-01-07 22:16:26,621 [Dummy-1:8468] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2018-01-07 22:16:34,307 [Dummy-1:10900] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-01-07 22:16:34,311 [Dummy-1:10900] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2018-01-07 22:16:34,399 [Dummy-1:10900] [django.db.backends:91] [utils:execute] [DEBUG]- (0.004) SHOW FULL TABLES; args=None
+2018-01-07 22:16:34,403 [Dummy-1:10900] [django.db.backends:91] [utils:execute] [DEBUG]- (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-01-07 22:16:40,111 [Thread-2:8916] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-01-07 22:16:40,115 [Thread-2:8916] [django.db.backends:91] [utils:execute] [DEBUG]- (0.004) SELECT COUNT(*) FROM (SELECT `course`.`id` AS Col1 FROM `course` ORDER BY `course`.`date_publish` DESC LIMIT 40) subquery; args=()
+2018-01-07 22:16:40,115 [Thread-2:8916] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) FROM (SELECT `course`.`id` AS Col1 FROM `course` ORDER BY `course`.`click_count` DESC LIMIT 40) subquery; args=()
+2018-01-07 22:16:40,119 [Thread-2:8916] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) FROM (SELECT `course`.`id` AS Col1 FROM `course` ORDER BY `course`.`student_count` DESC LIMIT 40) subquery; args=()
+2018-01-07 22:16:40,139 [Thread-2:8916] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `recommend_keywords`.`id`, `recommend_keywords`.`name` FROM `recommend_keywords` LIMIT 8; args=()
+2018-01-07 22:16:40,143 [Thread-2:8916] [django.db.backends:91] [utils:execute] [DEBUG]- (0.004) SELECT `ad`.`id`, `ad`.`title`, `ad`.`description`, `ad`.`image_url`, `ad`.`callback_url`, `ad`.`index` FROM `ad` ORDER BY `ad`.`index` ASC, `ad`.`id` ASC LIMIT 3; args=()
+2018-01-07 22:16:40,147 [Thread-2:8916] [django.db.backends:91] [utils:execute] [DEBUG]- (0.004) SELECT `course`.`id`, `course`.`name`, `course`.`image`, `course`.`description`, `course`.`is_active`, `course`.`date_publish`, `course`.`need_days`, `course`.`need_days_base`, `course`.`student_count`, `course`.`favorite_count`, `course`.`click_count`, `course`.`is_novice`, `course`.`is_click`, `course`.`index`, `course`.`teacher_id`, `course`.`stages_id`, `course`.`is_homeshow`, `course`.`is_required` FROM `course` ORDER BY `course`.`date_publish` DESC LIMIT 3; args=()
+2018-01-07 22:16:40,159 [Thread-2:8916] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 33983
+2018-01-07 22:16:40,431 [Thread-3:4160] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/ajax.js HTTP/1.1" 304 0
+2018-01-07 22:16:40,443 [Thread-4:6704] [django.server:124] [basehttp:log_message] [INFO]- "GET /upload/course/2018/01/9.jpg HTTP/1.1" 200 13116
+2018-01-07 22:16:40,447 [Thread-5:944] [django.server:124] [basehttp:log_message] [INFO]- "GET /upload/course/2018/01/10.jpg HTTP/1.1" 200 17029
+2018-01-07 22:16:40,459 [Thread-6:11408] [django.server:124] [basehttp:log_message] [INFO]- "GET /upload/course/2018/01/1.jpg HTTP/1.1" 200 41178
+2018-01-07 22:16:40,487 [Thread-7:3644] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/yzm.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2018-01-07 22:16:40,491 [Thread-7:3644] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/yzm.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'course.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\course\\\\urls.py'> (None:course) ^course/>"
+2018-01-07 22:16:40,495 [Thread-7:3644] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/yzm.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'users.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\users\\\\urls.py'> (None:users) ^users/>"
+2018-01-07 22:16:40,503 [Thread-7:3644] [django.server:124] [basehttp:log_message] [WARNING]- "GET /test/yzm.jpg HTTP/1.1" 404 2860
+2018-01-07 22:16:40,511 [Thread-8:464] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/15.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2018-01-07 22:16:40,511 [Thread-8:464] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/15.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'course.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\course\\\\urls.py'> (None:course) ^course/>"
+2018-01-07 22:16:40,519 [Thread-8:464] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/15.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'users.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\users\\\\urls.py'> (None:users) ^users/>"
+2018-01-07 22:16:40,519 [Thread-8:464] [django.server:124] [basehttp:log_message] [WARNING]- "GET /test/15.jpg HTTP/1.1" 404 2857
+2018-01-07 22:28:34,960 [Dummy-1:11184] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-01-07 22:28:34,960 [Dummy-1:11184] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2018-01-07 22:28:35,016 [Dummy-1:11184] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SHOW FULL TABLES; args=None
+2018-01-07 22:28:35,016 [Dummy-1:11184] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-01-07 22:28:39,067 [Thread-2:13652] [django.db.backends:91] [utils:execute] [DEBUG]- (0.004) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-01-07 22:28:39,067 [Thread-2:13652] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) FROM (SELECT `course`.`id` AS Col1 FROM `course` ORDER BY `course`.`date_publish` DESC LIMIT 40) subquery; args=()
+2018-01-07 22:28:39,067 [Thread-2:13652] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) FROM (SELECT `course`.`id` AS Col1 FROM `course` ORDER BY `course`.`click_count` DESC LIMIT 40) subquery; args=()
+2018-01-07 22:28:39,072 [Thread-2:13652] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) FROM (SELECT `course`.`id` AS Col1 FROM `course` ORDER BY `course`.`student_count` DESC LIMIT 40) subquery; args=()
+2018-01-07 22:28:39,079 [Thread-2:13652] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `recommend_keywords`.`id`, `recommend_keywords`.`name` FROM `recommend_keywords` LIMIT 8; args=()
+2018-01-07 22:28:39,083 [Thread-2:13652] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `ad`.`id`, `ad`.`title`, `ad`.`description`, `ad`.`image_url`, `ad`.`callback_url`, `ad`.`index` FROM `ad` ORDER BY `ad`.`index` ASC, `ad`.`id` ASC LIMIT 3; args=()
+2018-01-07 22:28:39,083 [Thread-2:13652] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `course`.`id`, `course`.`name`, `course`.`image`, `course`.`description`, `course`.`is_active`, `course`.`date_publish`, `course`.`need_days`, `course`.`need_days_base`, `course`.`student_count`, `course`.`favorite_count`, `course`.`click_count`, `course`.`is_novice`, `course`.`is_click`, `course`.`index`, `course`.`teacher_id`, `course`.`stages_id`, `course`.`is_homeshow`, `course`.`is_required` FROM `course` ORDER BY `course`.`date_publish` DESC LIMIT 3; args=()
+2018-01-07 22:28:39,091 [Thread-2:13652] [django.db.backends:91] [utils:execute] [DEBUG]- (0.004) SELECT `course`.`id`, `course`.`name`, `course`.`image`, `course`.`description`, `course`.`is_active`, `course`.`date_publish`, `course`.`need_days`, `course`.`need_days_base`, `course`.`student_count`, `course`.`favorite_count`, `course`.`click_count`, `course`.`is_novice`, `course`.`is_click`, `course`.`index`, `course`.`teacher_id`, `course`.`stages_id`, `course`.`is_homeshow`, `course`.`is_required` FROM `course` ORDER BY `course`.`click_count` DESC LIMIT 3; args=()
+2018-01-07 22:28:39,091 [Thread-2:13652] [django.server:124] [basehttp:log_message] [INFO]- "GET /?page=2 HTTP/1.1" 200 32589
+2018-01-07 22:28:39,124 [Thread-3:9876] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/15.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2018-01-07 22:28:39,136 [Thread-4:5004] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/yzm.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2018-01-07 22:28:39,140 [Thread-3:9876] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/15.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'course.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\course\\\\urls.py'> (None:course) ^course/>"
+2018-01-07 22:28:39,152 [Thread-4:5004] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/yzm.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'course.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\course\\\\urls.py'> (None:course) ^course/>"
+2018-01-07 22:28:39,152 [Thread-3:9876] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/15.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'users.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\users\\\\urls.py'> (None:users) ^users/>"
+2018-01-07 22:28:39,156 [Thread-4:5004] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/yzm.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'users.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\users\\\\urls.py'> (None:users) ^users/>"
+2018-01-07 22:28:39,156 [Thread-3:9876] [django.server:124] [basehttp:log_message] [WARNING]- "GET /test/15.jpg HTTP/1.1" 404 2857
+2018-01-07 22:28:39,160 [Thread-4:5004] [django.server:124] [basehttp:log_message] [WARNING]- "GET /test/yzm.jpg HTTP/1.1" 404 2860
+2018-01-07 22:31:20,645 [Thread-5:14068] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-01-07 22:31:20,645 [Thread-5:14068] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) FROM (SELECT `course`.`id` AS Col1 FROM `course` ORDER BY `course`.`date_publish` DESC LIMIT 40) subquery; args=()
+2018-01-07 22:31:20,649 [Thread-5:14068] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) FROM (SELECT `course`.`id` AS Col1 FROM `course` ORDER BY `course`.`click_count` DESC LIMIT 40) subquery; args=()
+2018-01-07 22:31:20,649 [Thread-5:14068] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) FROM (SELECT `course`.`id` AS Col1 FROM `course` ORDER BY `course`.`student_count` DESC LIMIT 40) subquery; args=()
+2018-01-07 22:31:20,657 [Thread-5:14068] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `recommend_keywords`.`id`, `recommend_keywords`.`name` FROM `recommend_keywords` LIMIT 8; args=()
+2018-01-07 22:31:20,657 [Thread-5:14068] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `ad`.`id`, `ad`.`title`, `ad`.`description`, `ad`.`image_url`, `ad`.`callback_url`, `ad`.`index` FROM `ad` ORDER BY `ad`.`index` ASC, `ad`.`id` ASC LIMIT 3; args=()
+2018-01-07 22:31:20,661 [Thread-5:14068] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `course`.`id`, `course`.`name`, `course`.`image`, `course`.`description`, `course`.`is_active`, `course`.`date_publish`, `course`.`need_days`, `course`.`need_days_base`, `course`.`student_count`, `course`.`favorite_count`, `course`.`click_count`, `course`.`is_novice`, `course`.`is_click`, `course`.`index`, `course`.`teacher_id`, `course`.`stages_id`, `course`.`is_homeshow`, `course`.`is_required` FROM `course` ORDER BY `course`.`date_publish` DESC LIMIT 3; args=()
+2018-01-07 22:31:20,665 [Thread-5:14068] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `course`.`id`, `course`.`name`, `course`.`image`, `course`.`description`, `course`.`is_active`, `course`.`date_publish`, `course`.`need_days`, `course`.`need_days_base`, `course`.`student_count`, `course`.`favorite_count`, `course`.`click_count`, `course`.`is_novice`, `course`.`is_click`, `course`.`index`, `course`.`teacher_id`, `course`.`stages_id`, `course`.`is_homeshow`, `course`.`is_required` FROM `course` ORDER BY `course`.`click_count` DESC LIMIT 3; args=()
+2018-01-07 22:31:20,669 [Thread-5:14068] [django.db.backends:91] [utils:execute] [DEBUG]- (0.004) SELECT `course`.`id`, `course`.`name`, `course`.`image`, `course`.`description`, `course`.`is_active`, `course`.`date_publish`, `course`.`need_days`, `course`.`need_days_base`, `course`.`student_count`, `course`.`favorite_count`, `course`.`click_count`, `course`.`is_novice`, `course`.`is_click`, `course`.`index`, `course`.`teacher_id`, `course`.`stages_id`, `course`.`is_homeshow`, `course`.`is_required` FROM `course` ORDER BY `course`.`student_count` DESC LIMIT 3; args=()
+2018-01-07 22:31:20,669 [Thread-5:14068] [django.server:124] [basehttp:log_message] [INFO]- "GET /?page=2 HTTP/1.1" 200 30653
+2018-01-07 22:31:20,701 [Thread-6:13504] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/yzm.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2018-01-07 22:31:20,709 [Thread-7:11844] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/15.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2018-01-07 22:31:20,713 [Thread-6:13504] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/yzm.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'course.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\course\\\\urls.py'> (None:course) ^course/>"
+2018-01-07 22:31:20,717 [Thread-7:11844] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/15.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'course.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\course\\\\urls.py'> (None:course) ^course/>"
+2018-01-07 22:31:20,717 [Thread-6:13504] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/yzm.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'users.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\users\\\\urls.py'> (None:users) ^users/>"
+2018-01-07 22:31:20,721 [Thread-7:11844] [django.template:925] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern None ^upload/(?P<path>.*)$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern ad ^ad$>], [<RegexURLResolver <module 'common.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\common\\urls.py'> (None:common) ^>, <RegexURLPattern search ^search$>], [<RegexURLResolver <module 'course.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\course\\urls.py'> (None:course) ^course/>], [<RegexURLResolver <module 'users.urls' from 'D:\\BiggerLittle\\WorkStation\\Python\\git_pro\\maizi-website\\source\\maizi\\users\\urls.py'> (None:users) ^users/>]], 'path': 'test/15.jpg'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BiggerLittle\WorkStation\Python\django\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'users.urls' from 'D:\\\\BiggerLittle\\\\WorkStation\\\\Python\\\\git_pro\\\\maizi-website\\\\source\\\\maizi\\\\users\\\\urls.py'> (None:users) ^users/>"
+2018-01-07 22:31:20,725 [Thread-6:13504] [django.server:124] [basehttp:log_message] [WARNING]- "GET /test/yzm.jpg HTTP/1.1" 404 2860
+2018-01-07 22:31:20,729 [Thread-7:11844] [django.server:124] [basehttp:log_message] [WARNING]- "GET /test/15.jpg HTTP/1.1" 404 2857
+2018-01-07 22:36:46,479 [Dummy-1:11652] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-01-07 22:36:46,479 [Dummy-1:11652] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2018-01-07 22:36:46,551 [Dummy-1:11652] [django.db.backends:91] [utils:execute] [DEBUG]- (0.004) SHOW FULL TABLES; args=None
+2018-01-07 22:36:46,551 [Dummy-1:11652] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-01-07 23:01:41,929 [Dummy-1:10624] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-01-07 23:01:41,929 [Dummy-1:10624] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2018-01-07 23:01:42,009 [Dummy-1:10624] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SHOW FULL TABLES; args=None
+2018-01-07 23:01:42,013 [Dummy-1:10624] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()

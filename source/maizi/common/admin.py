@@ -73,17 +73,36 @@ class CourseResourceInline(admin.TabularInline):
 # 课程管理类
 class CourseAdmin(admin.ModelAdmin):
     inlines = [CourseResourceInline, ]
+    list_display = ('name',)
+
+
+# 显示方式
+class AdAdmin(admin.ModelAdmin):
+    list_display = ('title',)
+
+
+class RKWAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+
+
+class CCAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+
+
+class KWAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+
 
 # 向admin注册Model
 admin.site.register(UserProfile, UserProfileAdmin)
-admin.site.register(Ad)
+admin.site.register(Ad,AdAdmin)
 admin.site.register(MyMessage)
 admin.site.register(Links)
-admin.site.register(Keywords)
-admin.site.register(RecommendKeywords)
+admin.site.register(Keywords, KWAdmin)
+admin.site.register(RecommendKeywords, RKWAdmin)
 admin.site.register(EmailVerifyRecord)
 admin.site.register(RecommendedReading)
-admin.site.register(CareerCourse)
+admin.site.register(CareerCourse, CCAdmin)
 admin.site.register(Stage)
 admin.site.register(Course, CourseAdmin)
 admin.site.register(Lesson, LessonAdmin)
