@@ -11,15 +11,11 @@
     <div class="container">
       <div class="carousel-container">
         <div id="carousel">
-          <div class="carousel-feature">
-            <a href="{% url 'common:ad' %}"><img class="carousel-image" alt="Image Caption" src="{% static 'test/1.jpg' %}"></a>
-          </div>
-          <div class="carousel-feature">
-            <a href="{% url 'common:ad' %}"><img class="carousel-image" alt="Image Caption" src="{% static 'test/1.jpg' %}"></a>
-          </div>
-          <div class="carousel-feature">
-            <a href="{% url 'common:ad' %}"><img class="carousel-image" alt="Image Caption" src="{% static 'test/1.jpg' %}"></a>
-          </div>
+            {% for ad in ad_list %}
+                <div class="carousel-feature">
+                    <a href="{{ ad.callback_url }}"><img class="carousel-image" alt="{{ ad.title }}" src="{% static 'test/1.jpg' %}"></a>
+                </div>
+            {% endfor %}
         </div>
       </div>
     </div>
@@ -30,131 +26,62 @@
       <div class="v5-recommend">
         <div class="v5-tabs-box" id="v5-tabs">
           <ul class="v5-tabs" id="v5-tabs" role="tablist">
-            <li class="active"><a href="#new" class="is-active" role="tab" data-toggle="tab">最新课程</a></li>
-            <li><a href="#most" role="tab" data-toggle="tab">最多播放</a></li>
-            <li><a href="#hot" role="tab" data-toggle="tab">最具人气</a></li>
+            <li class="active">
+                <a href="#new" class="is-active" role="tab" data-toggle="tab">最新课程</a>
+            </li>
+            <li>
+                <a href="#most" role="tab" data-toggle="tab">最多播放</a>
+            </li>
+            <li>
+                <a href="#hot" role="tab" data-toggle="tab">最具人气</a>
+            </li>
           </ul>
           <div class="tabs-container tab-content">
             <div class="v5-course-item tab-pane fade in active" id="new" data-holder="holdernew">
               <div class="page-item">
                 <ul class="row course-list-index">
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
+                    {% for course in course_new_list %}
+                        {% if course.is_homeshow %}
+                              <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <a href="">
+                                  <dl>
+                                    <dt>
+                                      <div><img src="{{ media_url }}{{ course.image }}"></div>
+                                    </dt>
+                                    <dd>
+                                      <span>{{ course.name }}</span>
+                                      <p>{{ course.student_count }}人正在学习</p>
+                                    </dd>
+                                  </dl>
+                                </a>
+                              </li>
+                        {% endif %}
+                    {% endfor %}
                 </ul>
               </div>
               <div class="page-bg-w">
                 <div class="row v5-pages">
                   <div class="col-sm-12 v5-pages-list">
                     <ul class="row fr">
-                      <li><a href="" class="v5-icon v5-icon-prev"></a></li>
-                      <li><a href="" class="page-num active">1</a></li>
-                      <li><a href="" class="page-num">2</a></li>
-                      <li><a href="" class="page-num">3</a></li>
-                      <li><a href="" class="page-num">4</a></li>
-                      <li><a href="" class="page-num">5</a></li>
-                      <li><a href="" class="v5-icon v5-icon-next"></a></li>
+                        {% if course_new_list.has_previous %}
+                            <li><a href="?page={{ course_new_list.previous_page_number }}" class="v5-icon v5-icon-prev"></a></li>
+                        {% else %}
+                            <li><a class="v5-icon v5-icon-prev"></a></li>
+                        {% endif %}
+
+                        {% for num in course_new_list.paginator.page_range %}
+                            {% if num == course_new_list.number %}
+                                <li><a href="?page={{ num }}" class="page-num active">{{ num }}</a></li>
+                            {% else %}
+                                <li><a href="?page={{ num }}" class="page-num">{{ num }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+
+                        {% if course_new_list.has_next %}
+                            <li><a href="?page={{ course_new_list.next_page_number }}" class="v5-icon v5-icon-next"></a></li>
+                        {% else %}
+                            <li><a class="v5-icon v5-icon-next"></a></li>
+                        {% endif %}
                     </ul>
                   </div>
                 </div>
@@ -163,123 +90,48 @@
             <div class="v5-course-item tab-pane fade" id="most" data-holder="holdermost">
             	<div class="page-item">
                 <ul class="row course-list-index">
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
+                  {% for course in course_most_list %}
+                        {% if course.is_homeshow %}
+                              <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <a href="">
+                                  <dl>
+                                    <dt>
+                                      <div><img src="{{ media_url }}{{ course.image }}"></div>
+                                    </dt>
+                                    <dd>
+                                      <span>{{ course.name }}</span>
+                                      <p>{{ course.student_count }}人正在学习</p>
+                                    </dd>
+                                  </dl>
+                                </a>
+                              </li>
+                        {% endif %}
+                    {% endfor %}
                 </ul>
               </div>
               <div class="page-bg-w">
                 <div class="row v5-pages">
                   <div class="col-sm-12 v5-pages-list">
                     <ul class="row fr">
-                      <li><a href="" class="v5-icon v5-icon-prev"></a></li>
-                      <li><a href="" class="page-num active">1</a></li>
-                      <li><a href="" class="page-num">2</a></li>
-                      <li><a href="" class="page-num">3</a></li>
-                      <li><a href="" class="page-num">4</a></li>
-                      <li><a href="" class="page-num">5</a></li>
-                      <li><a href="" class="v5-icon v5-icon-next"></a></li>
+                        {% if course_most_list.has_previous %}
+                            <li><a href="?page={{ course_most_list.previous_page_number }}" class="v5-icon v5-icon-prev"></a></li>
+                        {% else %}
+                            <li><a class="v5-icon v5-icon-prev"></a></li>
+                        {% endif %}
+
+                        {% for num in course_most_list.paginator.page_range %}
+                            {% if num == course_most_list.number %}
+                                <li><a href="?page={{ num }}" class="page-num active">{{ num }}</a></li>
+                            {% else %}
+                                <li><a href="?page={{ num }}" class="page-num">{{ num }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+
+                        {% if course_most_list.has_next %}
+                            <li><a href="?page={{ course_most_list.next_page_number }}" class="v5-icon v5-icon-next"></a></li>
+                        {% else %}
+                            <li><a class="v5-icon v5-icon-next"></a></li>
+                        {% endif %}
                     </ul>
                   </div>
                 </div>
@@ -288,123 +140,48 @@
             <div class="v5-course-item tab-pane fade" id="hot" data-holder="holderhot">
               <div class="page-item">
                 <ul class="row course-list-index">
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
-                  <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                    <a href="">
-                      <dl>
-                        <dt>
-                          <div><img src="{% static 'test/17.jpg' %}"></div>
-                        </dt>
-                        <dd>
-                          <span>IO8 APP开发快速入门</span>
-                          <p>1850人正在学习</p>
-                        </dd>
-                      </dl>
-                    </a>
-                  </li>
+                  {% for course in course_hot_list %}
+                        {% if course.is_homeshow %}
+                              <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <a href="">
+                                  <dl>
+                                    <dt>
+                                      <div><img src="{{ media_url }}{{ course.image }}"></div>
+                                    </dt>
+                                    <dd>
+                                      <span>{{ course.name }}</span>
+                                      <p>{{ course.student_count }}人正在学习</p>
+                                    </dd>
+                                  </dl>
+                                </a>
+                              </li>
+                        {% endif %}
+                    {% endfor %}
                 </ul>
               </div>
               <div class="page-bg-w">
                 <div class="row v5-pages">
                   <div class="col-sm-12 v5-pages-list">
                     <ul class="row fr">
-                      <li><a href="" class="v5-icon v5-icon-prev"></a></li>
-                      <li><a href="" class="page-num active">1</a></li>
-                      <li><a href="" class="page-num">2</a></li>
-                      <li><a href="" class="page-num">3</a></li>
-                      <li><a href="" class="page-num">4</a></li>
-                      <li><a href="" class="page-num">5</a></li>
-                      <li><a href="" class="v5-icon v5-icon-next"></a></li>
+                        {% if course_hot_list.has_previous %}
+                            <li><a href="?page={{ course_hot_list.previous_page_number }}" class="v5-icon v5-icon-prev"></a></li>
+                        {% else %}
+                            <li><a class="v5-icon v5-icon-prev"></a></li>
+                        {% endif %}
+
+                        {% for num in course_hot_list.paginator.page_range %}
+                            {% if num == course_hot_list.number %}
+                                <li><a href="?page={{ num }}" class="page-num active">{{ num }}</a></li>
+                            {% else %}
+                                <li><a href="?page={{ num }}" class="page-num">{{ num }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+
+                        {% if course_hot_list.has_next %}
+                            <li><a href="?page={{ course_hot_list.next_page_number }}" class="v5-icon v5-icon-next"></a></li>
+                        {% else %}
+                            <li><a class="v5-icon v5-icon-next"></a></li>
+                        {% endif %}
                     </ul>
                   </div>
                 </div>
