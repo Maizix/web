@@ -18,4 +18,5 @@ urlpatterns = [
     url(r'^upload/(?P<path>.*)$', serve, {"document_root": settings.MEDIA_ROOT, }),
     url(r'^ad$', views.ad, name='ad'),
     url(r'^search$', views.search, name='search'),
+    url(r'^teacher', views.teacher, name='teacher'),
 ]

@@ -129,7 +129,7 @@ AUTH_USER_MODEL = "common.UserProfile"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'upload')
 
 MEDIA_URL = '/upload/'
-
+'''
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
@@ -206,3 +206,4 @@ LOGGING = {
         },
     }
 }
+'''

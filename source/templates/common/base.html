@@ -44,7 +44,7 @@
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
             <i class="v5-icon v5-icon-search"></i>
-            <input type="text" class="form-control" id="search" onkeyup="do_ajax();" placeholder="搜索你感兴趣的课程">
+            <input type="text" class="form-control" id="search" onkeyup="do_ajax();" onchange="do_ajax()" placeholder="搜索你感兴趣的课程">
           </div>
           <div class="search-dp" id="hotkeyword">
           	<!--推荐关键词-->
@@ -282,6 +282,7 @@ $(function() {
   $('.scroll-pane').jScrollPane({
       autoReinitialise: true
     });
+  $('#search').change(do_ajax());
 });
 </script>
 {% block custom_script %}{% endblock %}

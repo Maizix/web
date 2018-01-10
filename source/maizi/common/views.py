@@ -26,20 +26,28 @@ def global_setting(request):
     ad_list = Ad.objects.all()[:3]
     # 搜索推荐
     rkw_list = RecommendKeywords.objects.all()[:8]
-
     return locals()
 
 
 # 首页
 def index(request):
     # 课程
-    clist = Course.objects.all()
+    course_list = Course.objects.all()
     # 课程-最新
-    course_new_list = getpage(request, clist.order_by('-date_publish')[:40])
+    course_new_list = getpage(request, course_list.order_by('-date_publish')[:40])
     # 课程-最多播放
-    course_most_list = getpage(request, clist.order_by('-click_count')[:40])
+    course_most_list = getpage(request, course_list.order_by('-click_count')[:40])
     # 课程-最多人气
-    course_hot_list = getpage(request, clist.order_by('-student_count')[:40])
+    course_hot_list = getpage(request, course_list.order_by('-student_count')[:40])
+    # 老师
+    teacher_list = UserProfile.objects.filter(groups__name='老师')[:20]
+    # 阅读:官方
+    activity_list = RecommendedReading.objects.filter(reading_type='AV')[:5]
+    # 阅读:咨询
+    news_list = RecommendedReading.objects.filter(reading_type='NW')[:5]
+    # 阅读:技术
+    discuss_list = RecommendedReading.objects.filter(reading_type='DC')[:5]
+
     return render(request, "common/index.html", locals())
 
 
@@ -70,15 +78,20 @@ def ad(request):
 def search(request):
     try:
         word = request.GET.get('word','')
-        clist = ''
+        cslist = ''
         if word:
             cc_list = CareerCourse.objects.filter(name__contains=word)[:10]
             c_list = Course.objects.filter(name__contains=word)[:10]
-            clist = chain(cc_list, c_list)
-            clist = json.dumps(serialize('json', clist))
+            cslist = chain(cc_list, c_list)
+            cslist = json.dumps(serialize('json', cslist))
     except Exception as e:
         logger.error(e)
-    return HttpResponse(clist, content_type='application/json')
+    return HttpResponse(cslist, content_type='application/json')
 
 
-
+def teacher(request):
+    try:
+        tid = request.GET.get('tid',None)
+    except Exception as e:
+        logger.error(e)
+    return render(request, 'teacher.html',{'tid':tid})
