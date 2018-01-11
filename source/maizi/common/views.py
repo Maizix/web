@@ -32,7 +32,7 @@ def global_setting(request):
 # 首页
 def index(request):
     # 课程
-    course_list = Course.objects.all()
+    course_list = Course.objects.filter(is_homeshow=1)
     # 课程-最新
     course_new_list = getpage(request, course_list.order_by('-date_publish')[:40])
     # 课程-最多播放
